@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, p{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.top__bar{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(71, 71, 71, 1);
+}
+
+.top__bar__info{
+    padding: 11px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info__bar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.call, .mail{
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.call p, .mail p{
+    color: rgba(249, 249, 247, 1);
+}
+
+.call svg{
+        padding: 3px 0px;
+}
+
+.mail svg{
+        padding: 3px 0px;
+}
+
+.social{
+    gap: 4px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+    .social .logo-social{
+        width: 27px;
+        height: 27px;
+        background: rgba(249, 249, 247, 0.12);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+}
+
+    .social .tw a svg{
+        padding: 9px 7px 8px 8px;
+    }    
+
+    .social .fb a svg{
+        padding: 7px 10px 7px 10px;
+    }
+
+    .social .inst a svg{
+        padding: 7px 7px 7px 7px;
+    }
+
+    .social .github a svg{
+        padding: 7px 6px 7px 7px;
+    }
+
+.navbar{
+    display: none;
+    width: 80px;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+.navbar .menu-items{
+    display: flex;
+}
+.navbar .nav-container li{
+    list-style: none;
+}
+.navbar .nav-container a{
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+    color: rgba(173, 52, 62, 1);
+}
+.nav-container{
+    display: block;
+    position: relative;
+    height: 60px;
+}
+.nav-container .checkbox{
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.nav-container .hamburger-lines{
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-container .hamburger-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+.nav-container .hamburger-lines .line1{
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.nav-container .hamburger-lines .line2{
+    transition: transform 0.2s ease-in-out;
+}
+.nav-container .hamburger-lines .line3{
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar .menu-items{
+    padding-top: 80px;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    width: 140px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+.navbar .menu-items li{
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.logo {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #0e2431;
+}
+.nav-container input[type="checkbox"]:checked ~ .menu-items{
+    transform: translateX(0);
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+    transform: rotate(45deg);
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+    transform: scaleY(0);
+}
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+    transform: rotate(-45deg);
+}
+.nav-container input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+
+.navbar__menu {
+    margin-top: 29px;
+}
+
+.menu__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .logo__link{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    gap: 13px;
+}
+
+nav a.title__logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 39px;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+    color: rgb(71, 71, 71);
+    padding: 12px 0 13px 0;
+}
+
+nav .menu {
+    margin: 11px 0;
+}
+
+nav .menu ul {
+        display: flex;
+        flex-direction: row;
+        /* margin: 11px 158px 11px 0px; */
+        gap: 10px;
+}
+ 
+nav .menu li a{
+        display: block;
+        padding: 4px 16px;
+        color:rgba(44, 47, 36, 1);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+}        
+
+nav .menu li a:hover, nav .menu li a.active{
+        background:rgba(219, 223, 208, 1);
+        border-radius: 34px;
+        -webkit-border-radius: 34px;
+        -moz-border-radius: 34px;
+        -ms-border-radius: 34px;
+        -o-border-radius: 34px;
+}
+
+
+nav .btn{
+    width: 149px;
+    height: 48px;
+    border: 1.5px solid rgba(44, 47, 36, 1);
+    border-radius: 118px;
+    -webkit-border-radius: 118px;
+    -moz-border-radius: 118px;
+    -ms-border-radius: 118px;
+    -o-border-radius: 118px;
+}
+
+    nav .btn a{
+        display: inline-block;
+        width: 99px;
+        height: 24px;
+        padding: 12px 24px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+
+        color:rgba(24, 34, 38, 1);
+    }
+
+    nav .btn:hover{
+       background: rgba(173, 52, 62, 1);
+       transition: background 1s ease;
+       -webkit-transition: background 1s ease;
+       -moz-transition: background 1s ease;
+       -ms-transition: background 1s ease;
+       -o-transition: background 1s ease;
+}
+
+    nav .btn:not(hover){
+        background-color:white;
+        transition: background 1s ease;
+        -webkit-transition: background 1s ease;
+        -moz-transition: background 1s ease;
+        -ms-transition: background 1s ease;
+        -o-transition: background 1s ease;
+}
+
+    nav .btn a:hover{
+        color:rgba(255, 255, 255, 1);
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+}
+
+    nav .btn a:not(hover){
+        color:rgba(24, 34, 38, 1);
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+}
+
+
+main .welcom{
+    margin-top: 20px;
+    width: 100%;
+    height: 802px;
+
+    background: url(Img/bg.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.welcom .tittle{
+    max-width: 667px;
+    max-height: 392px;
+
+    padding: 207px 406px 203px 467px;
+    margin: 0 auto;
+    text-align: center;
+}
+    .welcom .tittle h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 6.25rem;
+        line-height: 96px;
+        color:rgba(44, 47, 36, 1);
+    }
+
+    .paragraf-tittle{
+        margin: 32px auto 0px auto;
+    }
+    .tittle .paragraf-tittle p {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color:rgba(44, 47, 36, 1);
+    }
+        
+    .tittle .buttons{
+    max-width: 349px;
+    height: 64px;
+
+    margin: 40px auto 0px auto;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+    .buttons .buttons1 a{
+        padding: 20px 32px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+
+        border-radius: 118px;
+        -webkit-border-radius: 118px;
+        -moz-border-radius: 118px;
+        -ms-border-radius: 118px;
+        -o-border-radius: 118px;
+    }
+
+    .buttons .buttons1 a:hover, .buttons .buttons1 a.active{
+        color:rgba(255, 255, 255, 1);
+        background: rgba(173, 52, 62, 1);
+        border-radius: 118px;
+        -webkit-border-radius: 118px;
+        -moz-border-radius: 118px;
+        -ms-border-radius: 118px;
+        -o-border-radius: 118px
+    }
+    
+    .buttons .buttons2 a{
+        padding: 20px 32px;
+        display: block;
+        border: 1.5px solid rgba(44, 47, 36, 1);
+        border-radius: 118px;
+        -webkit-border-radius: 118px;
+        -moz-border-radius: 118px;
+        -ms-border-radius: 118px;
+        -o-border-radius: 118px;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(24, 34, 38, 1);
+    }
+
+    .buttons2 a:hover{
+        color:rgba(255, 255, 255, 1);
+        background: rgba(173, 52, 62, 1);
+        border-radius: 118px;
+        -webkit-border-radius: 118px;
+        -moz-border-radius: 118px;
+        -ms-border-radius: 118px;
+        -o-border-radius: 118px
+    }
+
+@media screen and (min-width: 1400px) and (max-width: 1500px){
+    .welcom .tittle {
+        padding: 207px 406px 203px 467px;
+    }
+    .welcom .tittle h1{
+        font-size: 5rem;
+    }
+     /* .paragraf-tittle{
+        margin: 32px 35px 0px 35px;
+    } */
+    .tittle  .paragraf-tittle p{
+        font-size: 17px;
+    }
+    .buttons .buttons1 a{
+        padding: 18px 28px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .buttons .buttons2 a{
+        padding: 18px 28px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px){
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
+    .navbar__menu {
+        margin: 29px 50px 0 50px;
+    }
+
+    .welcom .tittle {
+        padding: 150px 406px 203px 467px;
+    }
+    .welcom .tittle h1{
+        font-size: 4.375rem;
+    }
+    .tittle  .paragraf-tittle p {
+        font-size: 16px;
+    }
+    .buttons .buttons1 a{
+        padding: 18px 28px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .buttons .buttons2 a{
+        padding: 18px 28px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
+    .navbar__menu {
+        margin: 29px 50px 0 50px;
+    }
+
+    .welcom .tittle {
+        padding: 140px 387px 203px 413px;
+    }
+    .welcom .tittle h1{
+        font-size: 4rem;
+    }
+    .tittle .paragraf-tittle p {
+        font-size: 15px;
+    }
+    .buttons .buttons1 a{
+        padding: 15px 25px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .buttons .buttons2 a{
+        padding: 15px 25px;
+        display: block;
+
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
+    .navbar__menu {
+        margin: 29px 50px 0 50px;
+    }
+
+    .menu__nav .btn{
+        margin-top: 10px;
+        margin-right: 40px;
+        width: 125px;
+    }
+
+    .menu__nav .btn a{
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+    .welcom .tittle {
+        padding: 140px 342px 203px 361px;
+    }
+    .welcom .tittle h1{
+        font-size: 3.9rem;
+    }
+    .tittle .paragraf-tittle p {
+        font-size: 15px;
+    }
+} 
+
+
+@media screen and (min-width: 992px) and (max-width: 1100px){
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
+    .navbar__menu {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__nav .btn{
+        margin-top: 10px;
+        margin-right: 40px;
+        width: 125px;
+    }
+
+    .menu__nav .btn a{
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+
+    .logo__link a, .menu {
+        display: none;
+    }
+    
+     .navbar{
+        display: block;
+        margin-left: -16px;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    .info__bar{
+        gap: 5px;
+    }
+
+    .call, .mail{
+        gap: 5px;
+    }
+
+    .call p, .mail p{
+        font-size: 13px;
+    }
+
+    .navbar{
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .social {
+        display: none;
+    }
+
+    .menu__nav .btn{
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 105px;
+        height: 40px;
+    }
+
+    .menu__nav .btn a{
+        font-size: 12px;
+        padding: 14px 14px;
+        line-height: 12px;
+    }
+
+    .info__bar {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    .info__bar{
+        margin: 0 auto;
+    }
+
+    .call p, .mail p{
+        font-size: 10px;
+    }
+
+    .welcom .tittle {
+        padding: 55px 70px 10px 70px;
+    }
+    .paragraf-tittle{
+        margin: 0;
+    }
+    .welcom .tittle h1{
+        font-size: 3rem;
+        line-height: 35px;
+    }
+    .tittle .paragraf-tittle p {
+        font-size: 9px;
+        line-height: 14px;
+    }
+}
