@@ -606,17 +606,17 @@ main .welcom{
     }
 
     .welcom .tittle {
-        padding: 120px 342px 203px 361px;
+        padding: 111px 377px 203px 3344px;
     }
     .welcom .paragraf-tittle {
         margin: 24px auto 0 auto;
     }
     .welcom .tittle h1{
-        font-size: 3.4rem;
+        font-size: 3rem;
         line-height: 62px;
     }
     .tittle .paragraf-tittle p {
-        font-size: 13px;
+        font-size: 10px;
     }
 } 
 
