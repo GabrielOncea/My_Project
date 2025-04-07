@@ -516,10 +516,10 @@ main .welcom{
 }
 
 @media (max-width: 768px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 800px;
         margin: 0 auto;
-    }
+    } */
 
     main .welcom {
         margin-top: 0;
@@ -598,7 +598,7 @@ main .welcom{
 
     .menu__nav .btn{
         margin-top: 20px;
-        margin-right: 20px;
+        margin-right: 30px;
         width: 88px;
         height: 37px;
     }
@@ -625,6 +625,12 @@ main .welcom{
     .tittle .paragraf-tittle p {
         font-size: 11px;
         line-height: 20px;
+    }
+
+    .top__bar__info{
+        margin: 0 50px;
+        display: flex;
+        justify-content: center;
     }
 
     .call p, .mail p{
