@@ -7,10 +7,6 @@
     padding: 0px;
 }
 
-/* body {
-    overflow-x: hidden;
-} */
-
 body, p{
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
@@ -341,7 +337,7 @@ nav .btn{
 
 main .welcom{
     margin-top: 20px;
-    /* height: 100.25vh; */
+    width: 100%;
     height: 802px;
 }
 
@@ -352,9 +348,9 @@ main .welcom{
 
 .welcom .tittle{
     max-width: 667px;
-    max-height: 392px;
+    height: 392px;
 
-    padding: 207px 406px 203px 467px;
+    padding: 207px 406px 203px 407px;
     margin: 0 auto;
     text-align: center;
 }
@@ -396,6 +392,7 @@ main .welcom{
         font-weight: 700;
         font-size: 15px;
         line-height: 24px;
+        border: 1.5px solid rgba(173, 52, 62, 1);
 
         border-radius: 118px;
         -webkit-border-radius: 118px;
@@ -407,11 +404,6 @@ main .welcom{
     .buttons .buttons1 a:hover, .buttons .buttons1 a.active{
         color:rgba(255, 255, 255, 1);
         background: rgba(173, 52, 62, 1);
-        border-radius: 118px;
-        -webkit-border-radius: 118px;
-        -moz-border-radius: 118px;
-        -ms-border-radius: 118px;
-        -o-border-radius: 118px
     }
     
     .buttons .buttons2 a{
@@ -441,350 +433,106 @@ main .welcom{
         -o-border-radius: 118px
     }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px){
+
+
+
+/* ----Adaptarea---- */
+
+
+@media (max-width: 1440px){
+    .navbar__menu{
+        margin: 29px 50px;
+    }
+
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
     .welcom .tittle {
-        /* padding: 207px 406px 203px 467px; */
-         padding: 207px 20px 203px 20px;
+         padding: 207px 250px 203px 250px;
+         max-width: 600px;
     }
+
     .welcom .tittle h1{
-        /* font-size: 5rem; */
+        font-size: 80px;
     }
-     /* .paragraf-tittle{
-        margin: 32px 35px 0px 35px;
-    } */
+    .tittle  .paragraf-tittle p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1024px){
+    .welcom .tittle {
+         padding: 207px 150px 203px 150px;
+         max-width: 500px;
+    }
+
+    .logo__link a, .menu {
+        display: none;
+    }
+
+     .menu__nav .btn{
+        margin-top: 20px;
+        margin-right: 50px;
+        width: 125px;
+    }
+
+      .menu__nav .btn a{
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+
+    .top__bar__info{
+        margin: 0 50px;
+    }
+
+     .navbar{
+        display: block;
+        margin: 10px 0;
+    }
+
+     .navbar__menu {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .welcom .tittle h1{
+        font-size: 75px;
+    }
     .tittle  .paragraf-tittle p{
         font-size: 17px;
     }
     .buttons .buttons1 a{
         padding: 18px 28px;
         display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
         font-size: 15px;
-        line-height: 24px;
     }
     .buttons .buttons2 a{
         padding: 18px 28px;
         display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
         font-size: 15px;
-        line-height: 24px;
     }
 }
-
-/* @media screen and (min-width: 1300px) and (max-width: 1400px){
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .navbar__menu {
-        margin: 29px 50px 0 50px;
-    }
-
-    .welcom .tittle {
-        padding: 150px 406px 203px 467px;
-    }
-    .welcom .tittle h1{
-        font-size: 4.375rem;
-    }
-    .tittle  .paragraf-tittle p {
-        font-size: 16px;
-    }
-    .buttons .buttons1 a{
-        padding: 18px 28px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-    .buttons .buttons2 a{
-        padding: 18px 28px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1300px){
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .navbar__menu {
-        margin: 29px 50px 0 50px;
-    }
-
-    .welcom .tittle {
-        padding: 140px 387px 203px 413px;
-    }
-    .welcom .tittle h1{
-        font-size: 4rem;
-    }
-    .tittle .paragraf-tittle p {
-        font-size: 15px;
-    }
-    .buttons .buttons1 a{
-        padding: 15px 25px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-    .buttons .buttons2 a{
-        padding: 15px 25px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1200px){
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .navbar__menu {
-        margin: 29px 50px 0 50px;
-    }
-
-    .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
-        width: 125px;
-    }
-
-    .menu__nav .btn a{
-        font-size: 14px;
-        padding: 11px 18px;
-    }
-    .welcom .tittle {
-        padding: 140px 342px 203px 361px;
-    }
-    .welcom .tittle h1{
-        font-size: 3.9rem;
-    }
-    .tittle .paragraf-tittle p {
-        font-size: 15px;
-    }
-        .buttons .buttons1 a{
-        padding: 15px 25px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-    .buttons .buttons2 a{
-        padding: 15px 25px;
-        display: block;
-
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 24px;
-    }
-} 
-
-
-@media screen and (min-width: 1000px) and (max-width: 1100px){
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .navbar__menu {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
-        width: 125px;
-    }
-
-    .menu__nav .btn a{
-        font-size: 14px;
-        padding: 11px 18px;
-    }
-
-    .logo__link a, .menu {
-        display: none;
-    }
-    
-     .navbar{
-        display: block;
-    }
-
-    .welcom .tittle {
-        padding: 111px 377px 203px 344px;
-    }
-    .welcom .paragraf-tittle {
-        margin: 24px auto 0 auto;
-    }
-    .welcom .tittle h1{
-        font-size: 3rem;
-        line-height: 63px;
-    }
-    .tittle .paragraf-tittle p {
-        font-size: 10px;
-    }
-}  */
-/* 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .call, .mail{
-        gap: 5px;
-    }
-
-    .call p, .mail p{
-        font-size: 13px;
-    }
-
-   .navbar__menu {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
-        width: 125px;
-    }
-
-    .menu__nav .btn a{
-        font-size: 14px;
-        padding: 11px 18px;
-    }
-
-    .logo__link a, .menu {
-        display: none;
-    }
-    
-     .navbar{
-        display: block;
-        margin-left: -16px;
-    }
-} */
-
-/* @media screen and (min-width: 570px) and (max-width: 768px){
-    .social {
-        display: none;
-    }
-
-   .navbar__menu {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
-        width: 125px;
-    }
-
-    .menu__nav .btn a{
-        font-size: 14px;
-        padding: 11px 18px;
-    }
-
-    .logo__link a, .menu {
-        display: none;
-    }
-    
-     .navbar{
-        display: block;
-        margin-left: -16px;
-    }
-
-    .top__bar__info{
-        margin: 0 50px;
-    }
-} */
-
-/* @media screen and (min-width: 375px) and (max-width: 570px) {
-    .social {
-        display: none;
-    }
-
-   .navbar__menu {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
-        width: 125px;
-    }
-
-    .menu__nav .btn a{
-        font-size: 14px;
-        padding: 11px 18px;
-    }
-
-    .logo__link a, .menu {
-        display: none;
-    }
-    
-     .navbar{
-        display: block;
-        margin-left: -16px;
-    }
-
-    .top__bar__info{
-        margin: 0 50px;
-    }
-
-    .call p, .mail p{
-        font-size: 10px;
-    }
-
-    .welcom .tittle {
-        padding: 75px 70px 10px 70px;
-    }
-    .paragraf-tittle{
-        margin: 0;
-    }
-    .welcom .tittle h1{
-        font-size: 1.400rem;
-        line-height: 45px;
-    }
-    .tittle .paragraf-tittle p {
-        font-size: 9px;
-        line-height: 14px;
-    }
-} */
-
 
 @media (max-width: 768px) {
-    .welcom .tittle {
-        padding: 100px 20px;
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    main .welcom {
+        margin-top: 0;
+    }
+
+   .welcom .tittle {
+        padding: 207px 70px 203px 70px;
+        max-width: 500px;
+        text-align: center;
     }
 
     .welcom .tittle h1 {
-        /* font-size: 3rem; */
+        font-size: 70px;
         line-height: 1.2;
     }
 
@@ -804,8 +552,8 @@ main .welcom{
     }
 
     .menu__nav .btn{
-        margin-top: 10px;
-        margin-right: 40px;
+        margin-top: 20px;
+        margin-right: 20px;
         width: 125px;
     }
 
@@ -820,7 +568,7 @@ main .welcom{
     
      .navbar{
         display: block;
-        margin-left: 0px;
+        margin: 10px 0;
     }
 
     .top__bar__info{
@@ -832,28 +580,24 @@ main .welcom{
 }
 
 @media (max-width: 575px){
-    main .welcom {
-        height: 410px;
-        margin-top: 0;
-    }
-
-    .welcom .welcom-content {
-        padding: 0 16px;
+    .wrapper{
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .welcom .tittle {
         padding: 207px 20px 203px 20px;
-        max-width: 300px;
+        max-width: 350px;
         text-align: center;
     }
 
     .welcom .tittle h1 {
-        font-size: 49px;
+        font-size: 52px;
         line-height: 1.2;
     }
 
     .menu__nav .btn{
-        margin-top: 10px;
+        margin-top: 20px;
         margin-right: 20px;
         width: 88px;
         height: 37px;
@@ -866,7 +610,7 @@ main .welcom{
 
      .navbar{
         display: block;
-        margin-left: 0px;
+        margin: 10px 0;
     }
 
     .navbar .menu-items {
