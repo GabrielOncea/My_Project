@@ -341,7 +341,8 @@ nav .btn{
 
 main .welcom{
     margin-top: 20px;
-    height: 100.25vh;
+    /* height: 100.25vh; */
+    height: 802;
 }
 
 .welcom .welcom-content{
@@ -832,7 +833,7 @@ main .welcom{
 
 @media (max-width: 575px){
     main .welcom {
-        height: 410px; /* на всю высоту экрана */
+        height: 410px;
         margin-top: 0;
     }
 
@@ -841,13 +842,13 @@ main .welcom{
     }
 
     .welcom .tittle {
-        padding: 207px 16px 203px 16px;
-        max-width: 100%;
+        padding: 207px 20px 203px 20px;
+        max-width: 300px;
         text-align: center;
     }
 
     .welcom .tittle h1 {
-        font-size: 2.8rem;
+        font-size: 49px;
         line-height: 1.2;
     }
 
@@ -905,34 +906,3 @@ main .welcom{
         gap: 10px;
     }
 }    
-
-@media (min-width: 375px) and (max-width: 425px){
-     /* .buttons .buttons1 a{
-        padding: 10px 20px;
-        display: block;
-        font-size: 9px;
-    }
-    .buttons .buttons2 a{
-        padding: 10px 20px;
-        display: block;
-        font-size: 9px;
-    }
-
-    .tittle .buttons {
-        margin: 40px 49px 0px 49px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    } */
-
-    .welcom .tittle {
-        padding: 207px 16px 203px 16px;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .welcom .tittle h1 {
-        font-size: 50px;
-        line-height: 1.2;
-    }
-}
