@@ -338,10 +338,19 @@ nav .btn{
 main .welcom{
     margin-top: 20px;
     width: 100%;
-    height: 802px;
+    max-height: 802px;
+    position: relative;
+    padding: 0px 0px 58% 0px;
+}
 
-    background: url(Img/bg.jpg) no-repeat;
-    background-size: 100%;
+.welcom .welcom-content{
+     background: url(Img/bg.jpg) no-repeat;
+     background-size: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     object-fit: cover;
+     
 }
 
 .welcom .tittle{
@@ -362,6 +371,7 @@ main .welcom{
 
     .paragraf-tittle{
         margin: 32px auto 0px auto;
+        max-width: 537px;
     }
     .tittle .paragraf-tittle p {
         font-family: 'DM Sans', sans-serif;
