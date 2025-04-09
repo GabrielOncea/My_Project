@@ -14,6 +14,25 @@ body, p{
   line-height: 24px;
 }
 
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 60px;
+
+    color: rgba(44, 47, 36, 1)
+}
+
+h3{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.72px;
+
+    color: rgba(44, 47, 36, 1);
+}
+
 a{
     text-decoration: none;
 }
@@ -362,7 +381,7 @@ main .welcom{
         color:rgba(44, 47, 36, 1);
     }
 
-    .paragraf-tittle{
+   .tittle .paragraf-tittle{
         margin: 32px auto 0px auto;
         max-width: 537px;
     }
@@ -434,6 +453,94 @@ main .welcom{
     }
 
 
+main .menu-section{
+    width: 100%;
+    height: 712px;
+
+    background-color: rgba(255, 255, 255, 1);
+}
+    .menu-section .content-menu {
+        text-align: center;
+        margin-top: 92px;
+        margin-bottom: 120px;
+        
+    }
+    .content-menu .card{
+        padding-top: 64px;
+        gap: 24px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card .menu-card{
+            max-width: 306px;
+            height: 375px;
+            border: 1.5px solid rgba(219, 223, 208, 1);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+    }
+    .menu-card .box-menu{
+                width: 238px;
+                height: 303px;
+
+                padding: 40px 33px 32px 33px;    
+            }
+                .box-menu .logo-card{
+                    width: 100px;
+                    height: 100px;
+                    margin: 0px 69px 30px 69px;
+                    background-color:rgba(77, 89, 43, 7%);
+                    border-radius: 100%;
+                    -webkit-border-radius: 100%;
+                    -moz-border-radius: 100%;
+                    -ms-border-radius: 100%;
+                    -o-border-radius: 100%;
+                }
+
+                .box-menu .logo-breakfast{
+                    padding: 25px 26px;
+                }
+
+                .box-menu .logo-dishes{
+                    padding: 25px 23.43px 25px 24px;
+                }
+
+                .box-menu .logo-drinks{
+                    padding: 25px 30px 25px 30px;
+                }
+
+                .box-menu .logo-desserts{
+                    padding: 26px 24px 25px 25px;
+                }
+    
+    .box-menu .info-menu{
+        width: 238px;
+        height: 117px;
+        text-align: center;
+    }
+        .box-menu .info-menu p{
+            padding-top: 15px;
+            font-family: 'DM sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+    .box-menu .info-menu .explore-menu{
+        margin: 31px 66px 33px 66px;
+    }
+        .info-menu .explore-menu a {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 24px;
+
+            color: rgba(173, 52, 62, 1);
+        }
 
 
 /* ----Adaptarea---- */
@@ -458,6 +565,12 @@ main .welcom{
     }
     .tittle  .paragraf-tittle p{
         font-size: 17px;
+    }
+
+    .content-menu .card{
+        /* margin: 0 auto; */
+        justify-content: center;
+
     }
 }
 
